@@ -1,0 +1,15 @@
+git init
+touch README.md
+git add README.md
+git commit -m "Add README"
+
+nano README.md
+git status
+git diff
+
+git add README.md
+git restore --staged README.md
+
+git commit --amend -m "Correct commit message"
+
+git revert HEAD

@@ -1,0 +1,18 @@
+git branch feature-ui
+git checkout feature-ui
+
+nano app.txt
+git add app.txt
+git commit -m "Update UI feature"
+
+git checkout main
+nano app.txt
+git add app.txt
+git commit -m "Update main branch file"
+
+git merge feature-ui
+
+# (merge conflict happens)
+nano app.txt
+git add app.txt
+git commit -m "Resolve merge conflict"

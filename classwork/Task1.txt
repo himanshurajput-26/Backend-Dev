@@ -1,0 +1,4 @@
+cd /var/log/app
+ls -lah
+tail -n 20 error.log
+grep -i "error" *.log > error_report.txt
