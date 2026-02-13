@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css"> </head>
+<body>
+    <%- include('partials/header') %>
+    <h1>Photo Gallery</h1>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <% images.forEach(function(img) { %>
+            <div class="photo-card">
+                <img src="/images/<%= img %>" alt="Gallery Image" style="width: 250px; height: auto; border: 1px solid #ccc;">
+                <p><%= img %></p>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

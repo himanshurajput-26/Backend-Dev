@@ -1,0 +1,8 @@
+<%- include('partials/header') %>
+<h2>Student Details</h2>
+<p><strong>ID:</strong> <%= student.id %></p>
+<p><strong>Name:</strong> <%= student.name %></p>
+<p><strong>Marks:</strong> <%= student.marks %></p>
+<p><strong>Grade:</strong> <%= student.grade %></p>
+<p><strong>Status:</strong> <%= student.marks >= 50 ? 'Pass' : 'Fail' %></p>
+<%- include('partials/footer') %>
