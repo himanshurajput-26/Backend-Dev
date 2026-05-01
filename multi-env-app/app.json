@@ -1,8 +1,0 @@
-{
-  "name": "multi-env-app",
-  "env": {
-    "NODE_ENV": {
-      "value": "development"
-    }
-  }
-}
